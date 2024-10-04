@@ -1,0 +1,262 @@
+body {
+    font-family: Popppins;
+    background:url(Vnight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.wraper {
+    box-shadow: 0 3px 6px #00000045, 0 3px 20px #00000045;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.pre {
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+.text-wraper {
+    height: 90px;
+    overflow-y: hidden;
+}
+
+.text-wraper .innerText {
+    background-image: url(Sky.jpg);
+    font-size: 6rem;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: Good 20s linear infinite;
+    display: flex;
+    flex-direction: column;
+    line-height: 100%;
+    margin-bottom: 2em;
+}
+
+@keyframes Good {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+main,
+.spa {
+    color: rgb(12, 2, 2);
+}
+
+@keyframes Good {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+#container {
+    position: relative;
+    height: 45%;
+    background: red;
+    margin-top: 55px;
+    border: 2px;
+    border-radius: 15%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+#container::before {
+    content: '';
+    position: absolute;
+    height: 50%;
+    left: -300px;
+    right: -100px;
+    top: 100px;
+    background: linear-gradient(90deg, rgba(55, 1, 248, 1), rgba(6, 252, 6, 0.966), rgb(227, 243, 4));
+    animation: ani 10s linear infinite;
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+#container::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 16%;
+    background-image: url(Wee.jpg);
+}
+
+#loginForm {
+    color: white;
+    font-family: popppins;
+    z-index: 1;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+       
+}
+ h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.Fav {
+    margin: 10px 10px 10px 10px;
+    font-size: 1.5em;
+    font-family: Popppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 25px;
+    width: 50%;
+    border-radius: 15%;
+}
+h4{
+    margin-right: 25px;
+}
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 50%    
+}
+
+.container {
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.parent {
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    perspective: 1000px;
+    margin-bottom: 300px;
+}
+
+.card {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url(Oon.jpg);
+    background-position: center center;
+    height: 400px;
+    width: 350px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+}
+
+.card:hover {
+    background-position: 80 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card .content {
+    height: 350px;
+    width: 300px;
+    background-color: black;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px;
+    transform-style: preserve-3d;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-title:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.card-content {
+    padding: 20px;
+    font-size: 20px;
+    color: gold;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px)
+}
+
+.card-content:hover {
+    transform: translate3d(0px, 0px, 50px)
+}
+.date-box {
+    position: absolute;
+    top: 5px;
+    left: 210px;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(236, 195, 13, 0.822);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 20px 60px 0px goldenrod;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px)
+}
+
+.date-box:hover {
+    transform: translate3d(0px, 0px, 50px)
+}
+
+.date-box span {
+    display: block;
+    text-align: center;
+}
+
+.date-box .Month {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.date-box .date {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.975);
+}
+
+.card12 {
+    filter: hue-rotate(300deg);
+}
+
+.card13 {
+    filter: hue-rotate(90deg);
+}
+
+.card14 {
+    filter: hue-rotate(150deg);
+}
+.card16 {
+    filter: hue-rotate(300deg);
+}
+
+.card17 {
+    filter: hue-rotate(90deg);
+}
+
+.card18 {
+    filter: hue-rotate(150deg);
+}
+

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatic Background Music with Lyrics and Image Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="notice">
+    <strong>Today you are 20years ... I am give you 20 songs too ENJOY My Bimv</strong>
+    Click controls below to change music, background image, and display lyrics
+  </div>
+
+  <div class="controls">
+    <button id="prevButton">Previous</button>
+    <button id="playPauseButton">Play</button>
+    <button id="nextButton">Next</button>
+  </div>
+
+  <div class="settings">
+    <label for="musicSelect">Select Music:</label>
+    <select id="musicSelect">
+      <option value="0">All-of-Me</option>
+      <option value="1">Body-and-Soul</option>
+      <option value="2">Unstoppable</option>
+      <option value="3">Swear_It_Again5</option>
+      <option value="4">I-Love-You</option>
+      <option value="5">Just_The_Way_You_Are</option>
+      <option value="6"> A Thousand Years </option>
+      <option value="7">Like-I-Do</option>
+      <option value="8">Sunflower</option>
+      <option value="9">Tems-Me-U </option>
+      <option value="10">Ghost</option>
+      <option value="11">without-Me</option>
+      <option value="12">Circles</option>
+      <option value="13">lovely</option>
+      <option value="14">My_Love</option>
+      <option value="15">Ed-Sheeran-Shivers</option>
+      <option value="16">Shape-of-You</option>
+      <option value="17">It's-You</option>
+      <option value="18">Perfect</option>
+      <option value="19">Halo</option>
+      <!-- ADD MORE -->
+    </select>
+  </div>
+
+  <audio id="backgroundMusic" loop autoplay>
+    <source src="Love_Is_Gone.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="lyricsDisplay" class="lyrics-display">
+    <p id="lyricsText" class="lyrics-text">Lyrics will display here</p>
+  </div>
+
+  <div class="image-display">
+    <img id="backgroundImage" src="mayur-gala.jpg" alt="Background Image">
+  </div>
+
+  <div class="credits">
+    Background images and music by [Your Credits Here]
+  </div>
+
+  <div class="footer">
+    &copy; 2024 Your Website By Fanadilia. Copy Free Reserved.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

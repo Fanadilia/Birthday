@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Popppins;
+}
+body{
+    display: grid;
+    background-color: white;
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+h1{  position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 9999;
+}
+strong{
+    color: crimson;
+    font-size: 2em;
+}
+span{
+
+}
+.Card{
+    margin-top: 100px;
+    position: relative;
+    min-height: 680px;
+    width: 350px;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 3px black;
+    background:linear-gradient(90deg,rgb(252, 10, 10),rgb(0, 5, 4));  
+}
+img{ 
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    border-radius: 3px 3px 400px 0px;
+    transition: 1s;
+}
+.text-box{
+    position: relative;
+    top: 500px;
+}
+.text-box h2{
+    margin: 10px;
+}
+.text-box p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    transition: 1s;
+    color: white;
+}
+.box{ position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border: 2px;
+    top: 500px;
+    left: 20px;
+    transition: 1s;
+}
+.Card:hover img{
+    height: 680px;
+    border-radius: 3px;
+}
+.Card:hover .text-box {
+    top: 150px;
+    opacity: 0;
+}
+.Card:hover .box {
+    background-color: white;
+}
